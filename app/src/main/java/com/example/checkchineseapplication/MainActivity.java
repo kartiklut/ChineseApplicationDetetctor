@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<HashMap> mapArrayList_main;
     HashMap<String,String> lmap;
     HashMap<String,String> lmap_main;
-
+    int size;
 
 
     @Override
@@ -65,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
                 // Log.d("package",appname);
                 ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.activity_listview, R.id.textView, arrayList);
                 listView.setAdapter(arrayAdapter);
-
 
 
 
@@ -102,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
             Toasty.warning(this,"Found Chinese Application",Toast.LENGTH_SHORT).show();
             Intent intent=new Intent(MainActivity.this,FoundActivity.class);
             intent.putStringArrayListExtra("list",arrayListmain);
+            intent.putExtra("size",size);
             intent.putExtra("MapArrayList",mapArrayList_main);
            // Log.d("size is : ",Integer.toString(fullyqualifiedlist.size()));
             startActivity(intent);

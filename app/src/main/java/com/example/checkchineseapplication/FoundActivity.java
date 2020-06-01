@@ -29,7 +29,7 @@ public class FoundActivity extends AppCompatActivity {
     ListView listView;
     String size;
     List<PackageInfo> packagelist;
-    String packages;
+    String packages="";
     Uri packageURI;
     ArrayList<HashMap<String, String>> mapArrayList;
     ArrayList<String> arrayList;
@@ -60,7 +60,6 @@ public class FoundActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String packages="";
                 String item_name=(String) parent.getItemAtPosition(position);
                 for (Map<String, String> entry : mapArrayList) {
                     for (String key : entry.keySet()) {
@@ -82,11 +81,11 @@ public class FoundActivity extends AppCompatActivity {
 
 
     }
-    @Override
-    public void onBackPressed() {
-        size="0";
-    }
+@Override
+public  void onBackPressed()
+{
 
+}
 
 
 }

@@ -11,8 +11,4 @@ public class NotFoundActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_not_found);
     }
-    @Override
-    public void onBackPressed() {
-
-    }
 }
