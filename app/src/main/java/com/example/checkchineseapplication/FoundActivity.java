@@ -31,6 +31,9 @@ public class FoundActivity extends AppCompatActivity {
     List<PackageInfo> packagelist;
     String packages;
     Uri packageURI;
+    ArrayList<HashMap<String, String>> mapArrayList;
+    ArrayList<String> arrayList;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,9 +42,9 @@ public class FoundActivity extends AppCompatActivity {
         textView=findViewById(R.id.textview1);
         listView=findViewById(R.id.listView);
         Intent intent=getIntent();
-        final ArrayList<String> arrayList=intent.getStringArrayListExtra("list");
+        arrayList=intent.getStringArrayListExtra("list");
 
-        final ArrayList<HashMap<String, String>> mapArrayList = (ArrayList<HashMap<String, String>>) intent.getSerializableExtra("MapArrayList");
+        mapArrayList  = (ArrayList<HashMap<String, String>>) intent.getSerializableExtra("MapArrayList");
 
 
         size=Integer.toString(arrayList.size());
