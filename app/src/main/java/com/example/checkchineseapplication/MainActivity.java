@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     ListView listView;
     ArrayList<String> arrayList;
     ArrayList<String> arrayListmain;
-    String arr[]={"CheckChineseApplication","jwt","flutterapp","UC Turbo","Helo","SHAREit","TikTok","Likee","Kwai","UC Browser","UC Mini","LiveMe","BIGO LIVE","Vigo Video","BeautyPlus","Xender","CamScanner","PUBG MOBILE","PUBG MOBILE LITE","Clash of Kings","Mobile Legends","Club Factory","SHEIN","AppLock","Game of Sultans","Mafia City","Battle of Empires"};
+    String arr[]={"Zoom","jwt","flutterapp","UC Turbo","Helo","SHAREit","TikTok","Likee","Kwai","UC Browser","UC Mini","LiveMe","BIGO LIVE","Vigo Video","BeautyPlus","Xender","CamScanner","PUBG MOBILE","PUBG MOBILE LITE","Clash of Kings","Mobile Legends","Club Factory","SHEIN","AppLock","Game of Sultans","Mafia City","Battle of Empires"};
     ArrayList<String> fullyqualifiedlist;
     ArrayList<HashMap> mapArrayList;
     ArrayList<HashMap> mapArrayList_main;
